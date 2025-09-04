@@ -1,0 +1,15 @@
+{
+  "name": "pnn50",
+  "group": "HRV_time",
+  "description": "相邻RR间期差值>50ms的比例，反映副交感张力",
+  "inputs": {
+    "lead": "II",
+    "window_s": 60
+  },
+  "method": "计算RR序列，统计|diff(RR)|>50ms的比例",
+  "refs": [
+    "TaskForce1996",
+    "Shaffer2017"
+  ],
+  "expected_domain_stability": 0.8
+}
